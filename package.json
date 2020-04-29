@@ -19,5 +19,7 @@
     "moment": "^2.24.0",
     "parcel": "^1.12.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "domready": "^1.0.8"
+  }
 }

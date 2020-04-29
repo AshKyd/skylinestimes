@@ -1,0 +1,25 @@
+.ratio{
+  background: red;
+  overflow:hidden;
+  height: 0;
+  overflow: hidden;
+  background: white;
+  position: relative;
+  background: rgba(0,0,0,0.1);
+  margin-bottom:.5em;
+  &--16x9{
+    padding-top: 9 / 16 * 100%;
+  }
+  &--4x3{
+    padding-top: 3 / 4 * 100%;
+  }
+}
+
+.ratio > *{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  object-fit: fill;
+}
