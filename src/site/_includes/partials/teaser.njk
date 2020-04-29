@@ -13,7 +13,7 @@
   <article class="teaser teaser--{{size}} teaser--{{ratio}}">
     <a href="{{post.url | url}}" class="teaser__link a--bespoke">
       <div class="teaser__image-ratio-box">
-        <img class="teaser__image" src="{{post.data.image}}?nf_resize=fit&w={{width}}" alt="" loading="lazy" />
+        <img class="teaser__image" src="{{post.data.image}}?nf_resize=fit&amp;w={{width}}" alt="" loading="lazy" />
       </div>
       <h2 class="teaser__title">{{post.data.title}}</h2>
       {% if post.data.kicker %}<strong class="teaser__kicker">{{post.data.kicker}}</strong>{% endif %}
