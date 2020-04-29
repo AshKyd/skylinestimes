@@ -1,0 +1,12 @@
+{% include "partials/header.njk" %}
+<div class="page__wrapper">
+  <div class="page__header">
+    <h1>{{page.data.title}}</h1>
+  </div>
+  <div class="page__content formatted-content">
+      {{ content | safe }}
+  </div>
+  <div class="page__sidebar">
+    {% include "partials/sidebar.njk" %}
+  </div>
+{% include "partials/footer.njk" %}

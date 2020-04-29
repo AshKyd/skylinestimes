@@ -1,0 +1,17 @@
+.teaserlist{
+  list-style: none;
+  margin:0;
+  padding:0;
+  display: flex;
+  &--vertical{
+    flex-direction: column;
+  }
+  
+  &__item{
+    padding-right: 1.5em;
+  }
+  &--vertical &__item{
+    padding-right: 0;
+    padding-bottom:1.5em;
+  }
+}

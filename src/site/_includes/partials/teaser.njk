@@ -1,0 +1,35 @@
+{% macro authorBlock(author) %}
+{% if authors[author].image %}
+<div class="author" data-author="{{author}}">
+  <img class="author__image" src="{{authors[author].image}}" alt="" />
+  <span class="author__name">{{authors[author].name}}</span>
+</div>
+{% else %}
+<!-- no author info found -->
+{% endif %}
+{% endmacro %}
+
+{% macro teaser(post, size='small', ratio='16x9', width='500', author=false, meta=true, text=true) %}
+  <article class="teaser teaser--{{size}} teaser--{{ratio}}">
+    <a href="{{post.url | url}}" class="teaser__link a--bespoke">
+      <div class="teaser__image-ratio-box">
+        <img class="teaser__image" src="{{post.data.image}}?nf_resize=fit&w={{width}}" alt="" loading="lazy" />
+      </div>
+      <h2 class="teaser__title">{{post.data.title}}</h2>
+      {% if post.data.kicker %}<strong class="teaser__kicker">{{post.data.kicker}}</strong>{% endif %}
+      {% if(meta) %}
+      <div class="teaser__meta">
+        {% if(author) %}
+          {% if post.data.author %}
+          <div class="teaser__author">
+            {{ authorBlock(post.data.author) }}
+          </div>
+          {% endif %}
+        {% endif %}
+        <span class="teaser__date">{{post.date | date('small') | safe}}</span>
+      </div>
+      {% endif %}
+      {% if(text) %}<p class="teaser__text">{{ post.data.description }}</p>{% endif %}
+    </a>
+  </article>
+{% endmacro %}

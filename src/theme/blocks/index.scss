@@ -1,0 +1,24 @@
+.index {
+  &__content,
+  &__main-teasers{
+    width: var(--siteWidth);
+    margin:0 auto;
+  }
+  &__main-teasers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  &__teaser-wide{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  &__teaser-half{
+    width: calc(50% - 10px);
+    margin-bottom: 40px;
+  }
+}

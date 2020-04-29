@@ -1,0 +1,24 @@
+{% include "partials/header.njk" %}
+{% from "partials/teaser.njk" import teaser with context %}
+
+
+<div class="index__content">
+    {{ content | safe }}
+</div>
+
+<section>
+  <h2>Just in</h2>
+  <ul class="index__main-teasers">
+    <li class="index__teaser-wide">
+      {{ teaser(collections.posts[0], size='large', author=true ) }}
+    </li>
+  
+  {% for post in collections.posts.slice(1) %}
+      <li class="index__teaser-half">
+        {{ teaser(post, size='medium') }}
+      </li>
+  {% endfor %}
+  </ul>
+</aside>
+    
+{% include "partials/footer.njk" %}
