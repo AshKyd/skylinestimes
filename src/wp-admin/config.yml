@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ashkyd/ash.ms
+  branch: master
 publish_mode: editorial_workflow
 media_folder: "/src/site/media/"
 public_folder: "/media/"
