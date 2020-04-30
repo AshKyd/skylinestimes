@@ -16,7 +16,6 @@ if(['#invite_token'].includes(window.location.hash.replace(/=.*/,''))){
   loadScript('https://identity.netlify.com/v1/netlify-identity-widget.js');
 }
 
-
 function makeIframe({src}){
   return `<iframe 
     sandbox="allow-scripts allow-same-origin"
@@ -36,6 +35,7 @@ const externalLinks = [
 ]
 
 domReady(() => {
+  // embedExternalLinks
   document.querySelectorAll('a.embed').forEach(link => {
     const url = link.href;
     const embed = externalLinks.find(({match}) => url.match(match));
@@ -57,4 +57,13 @@ domReady(() => {
     `
     link.parentNode.replaceChild(finalEmbed, link);
   })
+  
+  
+  // Enable native share
+  if(navigator.share){
+    document.querySelectorAll('.share__native').forEach(link => {
+      link.addEventListener('click', () => navigator.share(link.dataset));
+      link.classList.add('share__native--active');
+    })
+  }
 });

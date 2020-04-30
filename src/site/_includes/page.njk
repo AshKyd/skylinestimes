@@ -1,12 +1,17 @@
-{% include "partials/header.njk" %}
-<div class="page__wrapper">
+{% include "partials/head.njk" %}
+<article class="page__wrapper">
   <div class="page__header">
-    <h1>{{page.data.title}}</h1>
+    <h1 class="page__heading">{{title}}</h1>
+    {% if lede %}<p class="page__lede">{{lede}}</p>{% endif %}
+    <div class="page__header-share">{% include "partials/share.njk" %}</div>
   </div>
-  <div class="page__content formatted-content">
-      {{ content | safe }}
+  <div class="page__columns">
+    <div class="page__content formatted-content">
+        {{ content | safe }}
+    </div>
+    <div class="page__sidebar">
+      {% include "partials/sidebar.njk" %}
+    </div>
   </div>
-  <div class="page__sidebar">
-    {% include "partials/sidebar.njk" %}
-  </div>
+</article>
 {% include "partials/footer.njk" %}

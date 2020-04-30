@@ -1,0 +1,20 @@
+.header{
+  padding:.25em 1em;
+  background: var(--linkLightBackground);
+  margin-bottom:2em;
+  
+  &__inner{
+    max-width: calc(var(--siteWidth) + 16em);
+    padding:0 1em;
+    margin:0 auto;
+  }
+  
+  path{
+    fill: white;
+  }
+  &__logo{
+    display: inline-block;
+    position: relative;
+    width:200px;
+  }
+}   

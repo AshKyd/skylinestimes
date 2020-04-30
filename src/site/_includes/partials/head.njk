@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if title %}{{title}} - {% endif %}{{site.title}}</title>
+    <link rel="stylesheet" type="text/css" href="{{site.assetRoot}}/index.css" />
+    <script async src="{{site.assetRoot}}/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="feed" type="text/html" title="My blog's feed" href="feed.htm" />
+  </head>
+  <body>
+    <header class="header header--index">
+      <div class="header__inner">
+        <a class="header__logo" href="/" aria-label="Home">
+          {% include "partials/logo.njk" %}
+        </a>
+      </div>
+    </header>
+    {{ headerCustom | safe }}

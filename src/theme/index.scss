@@ -1,5 +1,6 @@
 @import './reset.scss';
 @import './mixins.scss';
+@import './blocks/header.scss';
 @import './blocks/index.scss';
 @import './blocks/page.scss';
 @import './blocks/author.scss';
@@ -8,9 +9,11 @@
 @import './blocks/formatted-content.scss';
 @import './blocks/ratio.scss';
 @import './blocks/embed.scss';
+@import './blocks/share.scss';
 
 :root{
   --textColor: #2e2f3e;
+  --textColorLight: #525365;
   --linkLight: #003580;
   --linkLightVisited: #3a0080;
   --highlight: rgb(255, 138, 0);
@@ -45,4 +48,5 @@ body {
   background: white;
   color: var(--textColor);
   font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  line-height: 1.3;
 }

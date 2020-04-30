@@ -16,7 +16,6 @@
         <img class="teaser__image" src="{{post.data.image}}?nf_resize=fit&amp;w={{width}}" alt="" loading="lazy" />
       </div>
       <h2 class="teaser__title">{{post.data.teaserTitle | default(post.data.title)}}</h2>
-      {% if post.data.kicker %}<strong class="teaser__kicker">{{post.data.kicker}}</strong>{% endif %}
       {% if(meta) %}
       <div class="teaser__meta">
         {% if(author) %}

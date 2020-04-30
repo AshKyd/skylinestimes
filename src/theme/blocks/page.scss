@@ -1,17 +1,33 @@
 .page {
-  &__wrapper{
+  &__wrapper {
     margin: 0 auto;
     max-width: calc(var(--siteWidth) + 16em);
     padding: 0 1em;
   }
-  @media (min-width: 800px){
-    &__wrapper{
+  &__header{
+    border-bottom: 1px solid --grayLight;
+    margin-bottom: 1.5em;
+  }
+  &__heading{
+    font-size: 48px;
+  }
+  &__lede{
+    font-size: 24px;
+    color: --textColorLight;
+    margin-top: 0.5em;
+    font-style: italic;
+  }
+  .share{
+    margin-top:.5em;
+  }
+  @media (min-width: 800px) {
+    &__columns {
       display: flex;
     }
-    &__content{
+    &__content {
       width: var(--siteWidth);
     }
-    &__sidebar{
+    &__sidebar {
       flex:1;
       margin-left:1em;
     }
