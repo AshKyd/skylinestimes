@@ -15,4 +15,4 @@ Skylines on console is often considered the inferior little brother to the deskt
 
 Only the base game is available in this free drop, so if you want to play with any of the extra add-on content you will still need to spend some moolah.
 
-PlayStation Plus is a subscription service that gives you online multiplayer, discounts on games from the PlayStation Store, and two free PS4 games to download and play each month. You can [read more about the announcement on the Playstation blog](https://blog.eu.playstation.com/2020/04/29/cities-skylines-and-farming-simulator-19-are-your-playstation-plus-games-for-may/).
+PlayStation Plus is a subscription service that gives you online multiplayer, discounts on games from the PlayStation Store, and two free PS4 games to download and play each month. You can [read more about the announcement](https://blog.eu.playstation.com/2020/04/29/cities-skylines-and-farming-simulator-19-are-your-playstation-plus-games-for-may/) or find [past Playstation Plus titles](https://blog.eu.playstation.com/tag/ps-plus/) on the Playstation blog.
