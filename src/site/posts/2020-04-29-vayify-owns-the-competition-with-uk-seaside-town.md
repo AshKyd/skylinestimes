@@ -15,10 +15,16 @@ The third April qualifier with the theme "regional fishing", was as a loose tie 
 
 The painfully British beach town was the crowd favourite by far, featuring a pebbly grey beachfront, amusement park, gorgeously detailed row houses, and a winding country road to a small satellite village in the hillside. The build almost had commentator AwesomeElves in tears with nostalgia.
 
-Overall Vayton-On-Sea was highest voted by audience and judges alike, which seemed to take Vayify completely by surprise. Earlier as a "bit of friendly banter" Vay made a promise to shave his head if he beat previous champ SoEverdream. This promise was followed through on promptly after CIAS.
+Overall Vayton-On-Sea was highest voted by audience and judges alike, which seemed to take Vayify completely by surprise. 
+
+## A close shave
+
+Earlier as a "bit of friendly banter" Vay made a promise to shave his head if he beat previous champ SoEverdream. This promise was followed through on promptly after CIAS.
 
 <a href="https://clips.twitch.tv/EnergeticMotionlessBulgogiHoneyBadger" class="embed">Vayify has a haircut</a>
 
 After the competition he commented, "I didn't think I was gonna win to be honest with you".
+
+## Tune in
 
 You can tune in live to [Cities in a Snap](https://www.twitch.tv/citiesinasnap) every Saturday, or [follow Vayify](https://www.twitch.tv/vayify) as they continue their UK coastal city build every Monday, Wednesday and Friday.
