@@ -13,8 +13,11 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "select", options: ['page'], default: 'page'}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Teaser Title", name: "teaserTitle", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Teaser title", name: "teaserTitle", widget: "string"}
+      - {label: "Publish date", name: "date", widget: "datetime"}
+      - {label: "Featured image", name: "image", widget: "image", required: false}
+      - {label: "Featured image alt text", name: "imageAlt", widget: "string", required: false}
+      - {label: "Author", name: "author", widget: "string", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}

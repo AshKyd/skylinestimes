@@ -2,9 +2,11 @@
 layout: page
 title: "Video series: Cities Skylines Mars"
 teaserTitle: Would you take a one-way trip to Mars?
+description: Mayor Citywokcitywall takes us on a hourney through their sci-fi Skylines build
 lede: The trailer has been viewed over 30k times
 date: 2020-04-29T16:05:58.227Z
 image: /media/city-skylines-mars.jpg
+imageAlt: A large habitation dome towers over the desolate red planet
 tags:
   - posts
   - builds

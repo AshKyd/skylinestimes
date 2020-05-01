@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Vayify owns the competition with UK seaside town
+description: CIAS judges take a tram ride along the beachfront with winning town Vayton-On-Sea
 teaserTitle: UK seaside town takes the crown in regional fishing qualifier
 lede: Upset victory for Cities in a Snap
 date: 2020-04-29T20:37:36.454Z
 image: /media/vayify-cias.jpg
+imageAlt: Four separate photos of a stereotypically British seaside town 
 tags:
   - posts
   - cias

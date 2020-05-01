@@ -8,6 +8,11 @@
   </div>
   <div class="page__columns">
     <div class="page__content formatted-content">
+      {% if(image) %}
+      <div class="page__image ratio ratio--16x9">
+        <img src="{{image}}" alt="{{imageAlt}}" />
+      </div>
+    {% endif %}
         {{ content | safe }}
     </div>
     <div class="page__sidebar">

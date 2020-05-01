@@ -2,8 +2,11 @@
 layout: page
 title: Cities Skylines free on Playstation
 teaserTitle: Cities Skylines free on Playstation
+description: If you've been meaning to try out console Skylines you're in luck.
 date: 2020-04-30T08:15:28.878Z
 image: /media/playstation-plus.jpg
+imageAlt: The Playstation Plus logo
+author: ashkyd
 tags:
   - posts
   - console
