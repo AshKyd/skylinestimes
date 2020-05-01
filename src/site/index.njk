@@ -1,0 +1,131 @@
+{% include "partials/head.njk" %}
+<style type="text/css">
+  .parallax-base{
+    background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 220px,#1e528e 500px,white 500px);
+    background-attachment: fixed;
+    height: calc(100vh + 100px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 2px;
+    margin-top:-100px;
+  }
+  .parallax-group{
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+   }
+  .parallax-group__layer{
+    position:absolute;
+    left:0;
+    width:100%;
+    mask-size:cover;
+    -webkit-mask-size: cover;
+    height:500px;
+    object-fit: cover;
+    object-position: center top;
+    -webkit-mask-position: center top;
+    transform-origin: center top;
+  }
+  .parallax-group__1{
+    z-index:1;
+    margin-top:-200px;
+  }
+  .parallax-group__1 .parallax-group__layer{
+    -webkit-transform: translateZ(-3px);
+    transform: translateZ(-3px) scale(2.5);
+    -webkit-mask-image:url(/media/assets/parallax-mask.png);
+    mask-image:url(/media/assets/parallax-mask.png);
+  }
+  .parallax-group__2{
+    z-index:2;
+    height:300px;
+    margin:1em;
+    position: relative;
+    text-align: center;
+    padding-top:100px;
+  }
+  .parallax-group__2 .parallax-group__layer{
+    -webkit-transform: translateZ(-2px);
+    transform: translateZ(-2px) scale(2);
+  }
+  .parallax-group__2 svg{
+    max-width: var(--siteWidth);
+  }
+  .parallax-group__2 path{
+    fill:white;
+  }
+  .parallax-group__3{
+    z-index:3;
+    margin-top:-200px
+  }
+  .parallax-group__3 .parallax-group__layer{
+    margin-top:0;
+    top:0;
+    -webkit-transform: translateZ(-1px);
+    transform: translateZ(-1px) scale(1.5);
+    -webkit-mask-image:url(/media/assets/parallax-mask-2.png);
+    mask-image:url(/media/assets/parallax-mask-2.png);
+  }
+  .parallax-group__content{
+    margin-top:720px;
+    background: white;
+    z-index: 3;
+  }
+  .index__content{
+    position: relative;
+    top:-100px;
+  }
+  
+  @media (min-width: 1000px){
+    .parallax-group__1{
+      margin-top:-400px;
+      margin-bottom:200px;
+    }
+    .parallax-group__layer{
+      height: 700px;
+    }
+    .parallax-group__content{
+      margin-top:880px;
+    }
+    .parallax-group__2{
+      padding-top:300px;
+    }
+  } 
+  
+  @media (max-height: 700px){
+    .parallax-group__1{
+      margin-top:-600px;
+    }
+</style>
+
+{% from "partials/teaser.njk" import teaser with context %}
+
+<div class="parallax-base">
+  <div class="parallax-group parallax-group__1">
+    <img 
+      class="parallax-group__layer"
+      src="/media/assets/parallax.jpg" 
+      >
+  </div>
+  <div class="parallax-group parallax-group__2">
+    <div class="parallax-group__layer">
+      {% include "partials/logo.njk" %}
+    </div>
+  </div>
+  <div class="parallax-group parallax-group__3">
+    <img
+      class="parallax-group__layer"
+      src="/media/assets/parallax-2.jpg" 
+      >
+  </div>
+  <div class="parallax-group parallax-group__content">
+    <div class="index__content">
+      {{ content | safe }}
+      {% include "partials/teasers-featured.njk" %}
+    </div>
+  </div>
+</div>
+
+    
+{% include "partials/footer.njk" %}
