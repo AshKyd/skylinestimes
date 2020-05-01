@@ -1,14 +1,13 @@
 .index {
-  &__content,
-  &__main-teasers{
-    width: var(--siteWidth);
-    margin:0 auto;
+  &__content{
+    padding:1em;
   }
   &__main-teasers{
+    max-width: var(--siteWidth);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin:0;
+    margin:0 auto;
     padding: 0;
     list-style: none;
   }
