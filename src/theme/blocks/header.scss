@@ -16,5 +16,18 @@
     display: inline-block;
     position: relative;
     width:200px;
+    position: relative;
+    &:hover,
+    &:focus{
+      &:before{
+        content: "";
+        border-left: 4px solid var(--highlightFg);
+        margin-left: -.5em;
+        position: absolute;
+        left:0;
+        top:25%;
+        height: 50%;
+      }
+    }
   }
 }   
