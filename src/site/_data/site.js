@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Skylines Times',
-  permalink: 'https://skylinetimes.com',
+  permalink: 'https://skylinestimes.com',
   "description": "All the news about Cities Skylines and the city building community.",
   assetRoot: process.env.ASSET_ROOT || '',
   "author": {
