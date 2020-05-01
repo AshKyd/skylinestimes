@@ -1,33 +1,23 @@
 ---json
 {
   "permalink": "feed.xml",
-  "eleventyExcludeFromCollections": true,
-  "metadata": {
-    "title": "Skylines Times",
-    "subtitle": "All the news about Cities Skylines and the city building community.",
-    "url": "https://skylines.news/",
-    "feedUrl": "https://example.com/feed.xml",
-    "author": {
-      "name": "Ash Kyd",
-      "email": "ash@kyd.com.au"
-    }
-  }
+  "eleventyExcludeFromCollections": true
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.subtitle }}</subtitle>
+  <link href="{{ site.permalink }}/feed.xml" rel="self"/>
+  <link href="{{ site.permalink }}"/>
   <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
-  <id>{{ metadata.url }}</id>
+  <id>{{ site.permalink }}</id>
   <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
+    <name>{{ site.author.name }}</name>
+    <email>{{ site.author.email }}</email>
   </author>
   {%- for post in collections.posts | reverse %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.permalink) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
