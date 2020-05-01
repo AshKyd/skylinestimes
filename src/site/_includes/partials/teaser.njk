@@ -5,11 +5,10 @@
   <span class="author__name">{{authors[author].name}}</span>
 </div>
 {% else %}
-<!-- no author info found -->
 {% endif %}
 {% endmacro %}
 
-{% macro teaser(post, size='small', ratio='16x9', width='500', author=false, meta=true, text=true) %}
+{% macro teaser(post, size='small', ratio='16x9', width='500', author=false, meta=true, text=false) %}
   <article class="teaser teaser--{{size}} teaser--{{ratio}}">
     <a href="{{post.url | url}}" class="teaser__link a--bespoke">
       <div class="teaser__image-ratio-box">
