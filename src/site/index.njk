@@ -71,6 +71,7 @@
     margin-top:720px;
     background: white;
     z-index: 3;
+    border-top:20px solid var(--grayLight);
   }
   .index__content{
     position: relative;
@@ -104,17 +105,21 @@
 <div class="parallax-base">
   <div class="parallax-group parallax-group__1">
     <img 
+      aria-hidden="true"
+      alt=""
       class="parallax-group__layer"
       src="/media/assets/parallax.jpg" 
       >
   </div>
   <div class="parallax-group parallax-group__2">
-    <div class="parallax-group__layer">
+    <div class="parallax-group__layer" aria-label="Skylines Times">
       {% include "partials/logo.njk" %}
     </div>
   </div>
   <div class="parallax-group parallax-group__3">
     <img
+      aria-hidden="true"
+      alt=""
       class="parallax-group__layer"
       src="/media/assets/parallax-2.jpg" 
       >
