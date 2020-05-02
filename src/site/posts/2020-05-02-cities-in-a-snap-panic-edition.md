@@ -38,7 +38,7 @@ breakoutContent:
 
     <li><a class="embed" href="https://www.twitch.tv/Luca_Fiorini">Luca_Fiorini</a></li>
 
-    <li><a class="embed" href="https://www.twitch.tv/SuperNove_GamerTTV">SuperNove_GamerTTV</a></a></li>
+    <li><a class="embed" href="https://www.twitch.tv/SuperNova_GamerTTV">SuperNova_GamerTTV</a></a></li>
 
     </ul>
 
@@ -74,7 +74,7 @@ Organizer & host Cazgem writes:
 The current participant list includes:
 
 1. **Round 1:** IamTheCitiesDork, EclipseChris, PumpkinHead_Live, Irishh\_
-2. **Round 2:** Terahdra, Sybex99, Luca_Fiorini, SuperNove_GamerTTV
+2. **Round 2:** Terahdra, Sybex99, Luca_Fiorini, SuperNova_GamerTTV
 3. **Round 3:** Kiggi85, Z_Lycos, Usually_Working, Sp3ctre17+1
 4. **Round 4:** 3x champions + special guest
 
