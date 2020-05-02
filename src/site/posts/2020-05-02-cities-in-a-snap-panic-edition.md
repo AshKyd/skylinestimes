@@ -51,7 +51,7 @@ breakoutContent:
 
     <li><a class="embed" href="https://www.twitch.tv/Usually_Working">Usually_Working</a></li>
 
-    <li><a class="embed" href="https://www.twitch.tv/Sp3ctre17">Sp3ctre17</a></a></li>
+    <li><a class="embed" href="https://www.twitch.tv/Sp3ctre18">Sp3ctre18</a></a></li>
 
     </ul>
 
@@ -74,7 +74,7 @@ The current participant list includes:
 
 1. **Round 1:** IamTheCitiesDork, EclipseChris, PumpkinHead_Live, Irishh\_
 2. **Round 2:** Terahdra, Sybex99, Luca_Fiorini, SuperNova_GamerTTV
-3. **Round 3:** Kiggi85, Z_Lycos, Usually_Working, Sp3ctre17+1
+3. **Round 3:** Kiggi85, Z_Lycos, Usually_Working, Sp3ctre18
 4. **Round 4:** 3x champions + special guest
 
 ## Watch on Twitch
