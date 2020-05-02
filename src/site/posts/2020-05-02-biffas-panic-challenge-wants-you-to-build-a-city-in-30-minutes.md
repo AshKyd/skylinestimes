@@ -5,14 +5,13 @@ description: No mods, no assets, how high can you get your population in
   Cities:Skylines in 30 minutes?
 teaserTitle: "Time to panic: how good are you at Skylines?"
 date: 2020-05-02T13:07:48.940Z
-image: /media/panic-challenge.jpg
+image: /media/skylines-population.jpg
 imageAlt: A built-up Cities:Skylines city with the population highlighted
 author: ashkyd
 tags:
   - posts
   - challenge
 ---
-
 Biffa, professor of lane mathematics and reknowned traffic fixer has a new speed build challenge for the Skylines community.
 
 ## The Challenge
@@ -29,6 +28,8 @@ Biffa, professor of lane mathematics and reknowned traffic fixer has a new speed
 6. Cup of Tea at the ready!
 
 ## Tips for growing population
+
+![Child Health Center asset](/media/child-health-center.jpg "Child Health Center" class="alignright")
 
 1. Manage your demand. Make sure you have everything your cims need, including jobs and entertainment.
 2. Aim to unlock high density buildings as early as possible, because it will help your population boom.
