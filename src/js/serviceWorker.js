@@ -4,46 +4,65 @@ var CACHE = "cache-and-update";
 self.addEventListener("install", function(evt) {
   console.log("The service worker is being installed.");
   // Ask the service worker to keep installing until the returning promise resolves.
-  // evt.waitUntil(precache());
+  evt.waitUntil(precache());
+
+  console.log("new version yay");
 });
 
 // On fetch, use cache but update the entry with the latest contents from the server.
-self.addEventListener("fetch", function(evt) {
-  console.log("The service worker is serving the asset.");
-  // You can use respondWith() to answer immediately, without waiting for the network response to reach the service worker…
-  fromCache(evt.request)
-    .then(response => {
-      evt.respondWith(response);
-      // …and waitUntil() to prevent the worker from being killed until the cache is updated.
-      evt.waitUntil(update(evt.request));
-    })
-    .catch(async () => {
-      await update();
-      evt.respondWith(fromCache(evt.request));
-    });
+self.addEventListener("fetch", function({ request }) {
+  if (
+    request.method !== "GET" ||
+    !request.url.startsWith(self.location.origin) ||
+    request.url.includes("socket.io")
+  ) {
+    return;
+  }
+
+  if (request.url.match(/\/$/)) {
+    console.log("trying to load page");
+    return getAndFallbackToCache(request);
+  }
+
+  return cacheFirst();
 });
+
+function getAndCache(request) {
+  return caches.open(CACHE).then(cache => {
+    return fetch(request).then(response => {
+      console.log("response", response);
+      // Put a copy of the response in the runtime cache.
+      return cache.put(request, response.clone()).then(() => {
+        return response;
+      });
+    });
+  });
+}
+
+function cacheFirst() {
+  caches.match(request).then(cachedResponse => {
+    // if we have a cached asset
+    if (cachedResponse) {
+      // run this in the background to refresh the cache
+      getAndCache(request);
+
+      // return the request straight away.
+      return cachedResponse;
+    }
+
+    return getAndCache(request);
+  });
+}
+
+function getAndFallbackToCache(request) {
+  return getAndCache(request).catch(e => {
+    return caches.match(request);
+  });
+}
 
 // Open a cache and use addAll() with an array of assets to add all of them to the cache. Return a promise resolving when all the assets are added.
 function precache() {
   return caches.open(CACHE).then(function(cache) {
     return cache.addAll([]);
-  });
-}
-
-// Open the cache where the assets were stored and search for the requested resource. Notice that in case of no matching, the promise still resolves but it does with undefined as value.
-function fromCache(request) {
-  return caches.open(CACHE).then(function(cache) {
-    return cache.match(request).then(function(matching) {
-      return matching || Promise.reject("no-match");
-    });
-  });
-}
-
-// Update consists in opening the cache, performing a network request and storing the new response data.
-function update(request) {
-  return caches.open(CACHE).then(function(cache) {
-    return fetch(request).then(function(response) {
-      return cache.put(request, response);
-    });
   });
 }
