@@ -5,6 +5,8 @@ description: No mods, no assets, how high can you get your population in
   Cities:Skylines in 30 minutes?
 teaserTitle: "Time to panic: how good are you at Skylines?"
 date: 2020-05-02T13:07:48.940Z
+image: /media/panic-challenge.jpg
+imageAlt: A built-up Cities:Skylines city with the population highlighted
 author: ashkyd
 tags:
   - posts
