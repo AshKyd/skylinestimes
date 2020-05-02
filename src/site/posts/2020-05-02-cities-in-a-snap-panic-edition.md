@@ -29,7 +29,7 @@ Round 1 was off to a solid start. [Iamthecitiesdork](https://www.twitch.tv/Iamth
 
 The competition was close, but with 10 minutes remaining things started to firm up with [EclipseChris](https://www.twitch.tv/EclipseChris) in the lead with 7.5k, to runner up [Irishh\_](https://www.twitch.tv/Irishh_)'s 4.5k.
 
-With three minutes to spare and Irishh* catching up, EclipseChris took desperate measures and dropped taxes to zero. At this point his high density residential became a runaway train to win the round with 10798 pops to Irishh*'s 7211, and PumpkinHead_Live's 5150.
+With three minutes to spare and Irishh catching up, EclipseChris took desperate measures and dropped taxes to zero. At this point his high density residential became a runaway train to win the round with 10798 pops to Irishh's 7211, and PumpkinHead_Live's 5150.
 
 ## Round 2
 
@@ -73,4 +73,4 @@ Terahdra was again first to high density, followed closely by Usually_Working, b
 
 Cities in a Snap is a community event focused on creating a fun, competitive environment. Streams run Every Saturday at 2 PM (14:00) US/Chicago Time, or 3 Eastern.
 
-You can [follow the CIAS channel](https://www.twitch.tv/citiesinasnap) or [catch the VOD for the whole on Twitch](https://www.twitch.tv/videos/609265846).
+You can [follow the CIAS channel](https://www.twitch.tv/citiesinasnap) or [catch the VOD for the whole event on Twitch](https://www.twitch.tv/videos/609265846).
