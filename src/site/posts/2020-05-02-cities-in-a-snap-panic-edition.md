@@ -43,12 +43,11 @@ breakoutContent:
     </ul>
 
     <h2>Round 3</h2>
+    <p>Round 3 had one participant forfeit due to being called into work.
 
     <ul class="grid">
 
     <li><a class="embed" href="https://www.twitch.tv/Kiggi85">Kiggi85</a></li>
-
-    <li><a class="embed" href="https://www.twitch.tv/Z_Lycos">Z_Lycos</a></li>
 
     <li><a class="embed" href="https://www.twitch.tv/Usually_Working">Usually_Working</a></li>
 
