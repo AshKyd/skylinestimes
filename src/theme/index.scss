@@ -1,53 +1,56 @@
-@import './reset.scss';
-@import './mixins.scss';
-@import './blocks/header.scss';
-@import './blocks/index.scss';
-@import './blocks/page.scss';
-@import './blocks/author.scss';
-@import './blocks/teaser.scss';
-@import './blocks/teaserlist.scss';
-@import './blocks/formatted-content.scss';
-@import './blocks/ratio.scss';
-@import './blocks/embed.scss';
-@import './blocks/share.scss';
+@import "./reset.scss";
+@import "./mixins.scss";
+@import "./blocks/header.scss";
+@import "./blocks/index.scss";
+@import "./blocks/page.scss";
+@import "./blocks/author.scss";
+@import "./blocks/teaser.scss";
+@import "./blocks/teaserlist.scss";
+@import "./blocks/formatted-content.scss";
+@import "./blocks/ratio.scss";
+@import "./blocks/embed.scss";
+@import "./blocks/share.scss";
+@import "./blocks/grid.scss";
 
-:root{
+:root {
   --textColor: #2e2f3e;
   --textColorLight: #525365;
   --linkLight: #003580;
   --linkLightVisited: #3a0080;
   --highlight: #2d91c2;
   --highlightFg: #fff;
-  --linkLightBackground: linear-gradient(90deg,#2d91c2,#1e528e);
-  
+  --linkLightBackground: linear-gradient(90deg, #2d91c2, #1e528e);
+
   --siteWidth: 640px;
-  --grayLight: rgba(0,0,0,.1);
+  --grayLight: rgba(0, 0, 0, 0.1);
 }
 
-a:not(.a--bespoke){
+a:not(.a--bespoke) {
   text-decoration: none;
   outline: none;
   color: var(--linkLight);
   &:hover,
-  &:focus{
+  &:focus {
     text-decoration: underline;
     text-decoration-color: var(--highlight) !important;
     @extend .rainbow-text;
   }
-  &:active{
+  &:active {
     text-decoration: none;
   }
-  &:visited{
+  &:visited {
     color: var(--linkLightVisited);
   }
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 body {
   background: white;
   color: var(--textColor);
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
   line-height: 1.3;
 }

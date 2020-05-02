@@ -4,6 +4,9 @@
     max-width: calc(var(--siteWidth) + 16em);
     padding: 0 1em;
   }
+  &__breakout {
+    padding: 1em;
+  }
   &__header {
     border-bottom: 1px solid --grayLight;
     margin-bottom: 1.5em;

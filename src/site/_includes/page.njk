@@ -1,6 +1,7 @@
 {% include "partials/head.njk" %}
 {% include "partials/header.njk" %}
-<article class="page__wrapper">
+<article>
+<div class="page__wrapper">
   <div class="page__header">
     <h1 class="page__heading">{{title}}</h1>
     {% if lede %}<p class="page__lede">{{lede}}</p>{% endif %}
@@ -19,9 +20,15 @@
     {% endif %}
         {{ content | safe }}
     </div>
-    <div class="page__sidebar">
+    <aside class="page__sidebar">
       {% include "partials/sidebar.njk" %}
-    </div>
+    </aside>
   </div>
+</div>
+{% if breakoutContent %}
+<div class="page__breakout">
+  {{ breakoutContent | safe}}
+</div>
+{% endif %}
 </article>
 {% include "partials/footer.njk" %}
