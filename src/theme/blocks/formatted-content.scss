@@ -21,6 +21,10 @@
     margin: 1em 1em 0 0;
     max-width: 50%;
   }
+  .aligncenter {
+    display: flex;
+    justify-content: center;
+  }
 
   dl {
     dt {

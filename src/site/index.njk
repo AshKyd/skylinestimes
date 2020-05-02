@@ -33,7 +33,7 @@
   }
   .parallax-group__1 .parallax-group__layer{
     -webkit-transform: translateZ(-3px);
-    transform: translateZ(-3px) scale(2.5);
+    transform: translateZ(-3px) scale(2.6);
     -webkit-mask-image:url(/media/assets/parallax-mask.png);
     mask-image:url(/media/assets/parallax-mask.png);
   }
@@ -63,7 +63,7 @@
     margin-top:0;
     top:0;
     -webkit-transform: translateZ(-1px);
-    transform: translateZ(-1px) scale(1.5);
+    transform: translateZ(-1px) scale(1.6);
     -webkit-mask-image:url(/media/assets/parallax-mask-2.png);
     mask-image:url(/media/assets/parallax-mask-2.png);
   }
@@ -91,6 +91,25 @@
     }
     .parallax-group__2{
       padding-top:300px;
+    }
+  } 
+  
+  @media (min-width: 2000px){
+    .parallax-group__1{
+      margin-top:-800px;
+      margin-bottom:400px;
+    }
+    .parallax-group__layer{
+      height: 1400px;
+    }
+    .parallax-group__content{
+      margin-top:1400px;
+    }
+    .parallax-group__2{
+      padding-top:600px;
+    }
+    .parallax-group__3{
+      margin-top:-400px;
     }
   } 
   
