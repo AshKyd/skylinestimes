@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Biffa's Panic Challenge wants you to build a city in 30 minutes
+lede: No mods, no assets, no problems
 description: No mods, no assets, how high can you get your population in
   Cities:Skylines in 30 minutes?
 teaserTitle: "Time to panic: how good are you at Skylines?"

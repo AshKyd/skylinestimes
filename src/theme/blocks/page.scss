@@ -3,6 +3,10 @@
     margin: 0 auto;
     max-width: calc(var(--siteWidth) + 16em);
     padding: 0 1em;
+
+    .share {
+      margin-top: 0.5em;
+    }
   }
   &__breakout {
     padding: 1em;
@@ -19,9 +23,6 @@
     color: --textColorLight;
     margin-top: 0.5em;
     font-style: italic;
-  }
-  .share {
-    margin-top: 0.5em;
   }
   &__image-element {
     width: 100%;

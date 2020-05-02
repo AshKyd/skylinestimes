@@ -18,9 +18,18 @@ collections:
           options: ["page"],
           default: "page",
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Teaser title", name: "teaserTitle", widget: "string" }
+      - { label: "Title (article)", name: "title", widget: "string" }
+      - { label: "Lede (article)", name: "lede", widget: "string" }
+      - {
+          label: "Description (teaser/SEO)",
+          name: "description",
+          widget: "string",
+        }
+      - {
+          label: "Teaser title (teaser)",
+          name: "teaserTitle",
+          widget: "string",
+        }
       - { label: "Publish date", name: "date", widget: "datetime" }
       - {
           label: "Featured image",
