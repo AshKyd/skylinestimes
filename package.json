@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ASSET_ROOT=/assets eleventy && parcel build src/theme/index.js -d _site/assets && cp -r src/wp-admin _site/",
+    "build": "eleventy && parcel build src/js/index.js -d _site/ && cp -r src/wp-admin _site/",
     "start": "npm run build && eleventy",
-    "start-server": "ASSET_ROOT=http://localhost:1234 eleventy --serve",
-    "start-assets": "parcel src/theme/index.js",
+    "start-server": "eleventy --serve",
+    "start-assets": "parcel -d _site/ src/js/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
