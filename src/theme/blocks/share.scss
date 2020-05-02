@@ -1,28 +1,27 @@
-.share{
-  &__fb{
+.share {
+  &__fb {
     fill: #3b5998;
   }
-  &__twitter{
+  &__twitter {
     fill: #00acee;
   }
-  
-  &__native:not(&__native--active){
+
+  &__native:not(&__native--active) {
     display: none;
-    background: red;
   }
-  
+
   &__link {
     border-radius: 50%;
     width: 32px;
-    height:32px;
+    height: 32px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     &:hover,
-    &:focus{
+    &:focus {
       background-image: var(--linkLightBackground);
-      path{
-        fill:white;
+      path {
+        fill: white;
       }
     }
   }

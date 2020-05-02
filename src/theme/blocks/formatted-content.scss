@@ -13,17 +13,29 @@
   .alignright {
     float: right;
     margin: 0 0 1em 1em;
-    max-width: 50%;
+    max-width: 45%;
   }
 
   .alignleft {
     float: left;
     margin: 1em 1em 0 0;
-    max-width: 50%;
+    max-width: 45%;
   }
   .aligncenter {
     display: flex;
     justify-content: center;
+  }
+
+  figure {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    border-bottom: 1px solid var(--grayLight);
+    figcaption {
+      padding: 0.25em 0 0.5em;
+    }
   }
 
   dl {

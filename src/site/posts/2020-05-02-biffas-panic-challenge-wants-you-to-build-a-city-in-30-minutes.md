@@ -12,6 +12,7 @@ tags:
   - posts
   - challenge
 ---
+
 Biffa, professor of lane mathematics and reknowned traffic fixer has a new speed build challenge for the Skylines community.
 
 ## The Challenge
@@ -29,7 +30,10 @@ Biffa, professor of lane mathematics and reknowned traffic fixer has a new speed
 
 ## Tips for growing population
 
-![Child Health Center asset](/media/child-health-center.jpg "Child Health Center" class="alignright")
+<figure class="alignright">
+  <img src="/media/child-health-center.jpg" alt="Child Health Center" />
+  <figcaption>Child health center</figcaption>
+</figure>
 
 1. Manage your demand. Make sure you have everything your cims need, including jobs and entertainment.
 2. Aim to unlock high density buildings as early as possible, because it will help your population boom.
