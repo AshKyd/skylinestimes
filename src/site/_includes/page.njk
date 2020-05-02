@@ -10,7 +10,11 @@
     <div class="page__content formatted-content">
       {% if(image) %}
       <div class="page__image ratio ratio--16x9">
-        <img src="{{image}}" alt="{{imageAlt}}" />
+        <picture>
+            <source srcset="{{image}}" media="(min-resolution: 2dppx) and (min-width:800px)">
+            <img class="page__image-element" src="{{image}}?nf_resize=fit&amp;w=640" alt="{{imageAlt}}" />
+        </picture>
+        
       </div>
     {% endif %}
         {{ content | safe }}

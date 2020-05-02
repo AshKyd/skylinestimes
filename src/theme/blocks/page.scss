@@ -4,21 +4,26 @@
     max-width: calc(var(--siteWidth) + 16em);
     padding: 0 1em;
   }
-  &__header{
+  &__header {
     border-bottom: 1px solid --grayLight;
     margin-bottom: 1.5em;
   }
-  &__heading{
+  &__heading {
     font-size: 48px;
   }
-  &__lede{
+  &__lede {
     font-size: 24px;
     color: --textColorLight;
     margin-top: 0.5em;
     font-style: italic;
   }
-  .share{
-    margin-top:.5em;
+  .share {
+    margin-top: 0.5em;
+  }
+  &__image-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   @media (min-width: 800px) {
     &__columns {
@@ -28,8 +33,8 @@
       width: var(--siteWidth);
     }
     &__sidebar {
-      flex:1;
-      margin-left:1em;
+      flex: 1;
+      margin-left: 1em;
     }
   }
 }
