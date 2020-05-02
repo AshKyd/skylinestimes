@@ -30,7 +30,7 @@ breakoutContent:
 
     <h2>Round 2</h2>
 
-    <ul>
+    <ul class="grid">
 
     <li><a class="embed" href="https://www.twitch.tv/Terahdra">Terahdra</a></li>
 
@@ -44,7 +44,7 @@ breakoutContent:
 
     <h2>Round 3</h2>
 
-    <ul>
+    <ul class="grid">
 
     <li><a class="embed" href="https://www.twitch.tv/Kiggi85">Kiggi85</a></li>
 
@@ -60,11 +60,12 @@ breakoutContent:
 
     <a class="embed" href="https://www.twitch.tv/citiesinbasnap">Cities in a Snap</a>
 ---
+
 Your weekly fix of Cities in a Snap is back for May, starting with an ambitious thirteen person competition based off [Biffa's Panic Challenge](https://skylinestimes.com/posts/2020-05-02-biffas-panic-challenge-wants-you-to-build-a-city-in-30-minutes/).
 
 Organizer & host Cazgem writes:
 
-> 12 participants will participate in a series of 30-minute population challenges. no mods, no assets. Each of the three qualifiers will run at 2:00, 2:40, and 3:20 (afternoon US/Chicago time) this Saturday. 
+> 12 participants will participate in a series of 30-minute population challenges. no mods, no assets. Each of the three qualifiers will run at 2:00, 2:40, and 3:20 (afternoon US/Chicago time) this Saturday.
 >
 > Each qualifier will feature four builders. The final round, at 4:00 will feature the three previous winners against a mystery final competitor.
 

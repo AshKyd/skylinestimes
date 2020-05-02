@@ -26,8 +26,8 @@
   </div>
 </div>
 {% if breakoutContent %}
-<div class="page__breakout">
-  {{ breakoutContent | safe}}
+<div class="page__breakout formatted-content">
+  {{ breakoutContent.code | safe }}
 </div>
 {% endif %}
 </article>
