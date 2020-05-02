@@ -22,7 +22,7 @@ breakoutContent:
 
     <li><a class="embed" href="https://www.twitch.tv/EclipseChris">EclipseChris</a></li>
 
-    <li><a class="embed" href="https://www.twitch.tv/PumpkinHeadLive">PumpkinHeadLive</a></li>
+    <li><a class="embed" href="https://www.twitch.tv/PumpkinHead_Live">PumpkinHead_Live</a></li>
 
     <li><a class="embed" href="https://www.twitch.tv/Irishh_">Irishh_</a></a></li>
 
@@ -73,7 +73,7 @@ Organizer & host Cazgem writes:
 
 The current participant list includes:
 
-1. **Round 1:** IamTheCitiesDork, EclipseChris, PumpkinHeadLive, Irishh\_
+1. **Round 1:** IamTheCitiesDork, EclipseChris, PumpkinHead_Live, Irishh\_
 2. **Round 2:** Terahdra, Sybex99, Luca_Fiorini, TDavy
 3. **Round 3:** Kiggi85, Z_Lycos, Usually_Working, Sp3ctre17+1
 4. **Round 4:** 3x champions + special guest
