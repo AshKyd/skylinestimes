@@ -4,7 +4,7 @@ var CACHE = "cache-and-update";
 self.addEventListener("install", function(evt) {
   console.log("The service worker is being installed.");
   // Ask the service worker to keep installing until the returning promise resolves.
-  evt.waitUntil(precache());
+  // evt.waitUntil(precache());
 });
 
 // On fetch, use cache but update the entry with the latest contents from the server.
