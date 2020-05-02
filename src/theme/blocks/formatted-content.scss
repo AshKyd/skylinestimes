@@ -1,4 +1,4 @@
-.formatted-content{
+.formatted-content {
   p,
   ol,
   ul,
@@ -6,74 +6,82 @@
   table,
   blockquote,
   section,
-  aside{
-    margin-bottom:1em;
+  aside {
+    margin-bottom: 1em;
   }
-  
-  .alignright{
-    float:right;
-    margin:0 0 1em 1em;
+
+  .alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+    max-width: 50%;
   }
-  
-  .alignleft{
-    float:left;
-    margin:1em 1em 0 0;
+
+  .alignleft {
+    float: left;
+    margin: 1em 1em 0 0;
+    max-width: 50%;
   }
-  
-  dl{
-    dt{
+
+  dl {
+    dt {
       font-weight: bold;
     }
-    dd{
+    dd {
       border-bottom: var(--gray-light);
-      padding-bottom:.5em;
-      margin-bottom:.5em;
+      padding-bottom: 0.5em;
+      margin-bottom: 0.5em;
     }
   }
-  
-  ul, ol{
+
+  ul,
+  ol {
     margin-left: 2em;
   }
-  
-  ul{
+
+  ul {
     list-style: disc;
   }
-  ol{
+  ol {
     list-style: decimal;
   }
-  li{
-    margin-bottom: .5em;
+  li {
+    margin-bottom: 0.5em;
   }
-  
-  section{
+
+  section {
     border: 1.5px solid var(--highlight);
     border-radius: 3px;
-    &:not(.bespoke){
-      padding:1em 1em 0;
+    &:not(.bespoke) {
+      padding: 1em 1em 0;
     }
   }
-  
-  h1{
+
+  h1 {
     text-decoration: line-through;
   }
-  
-  h2{
-    font-size:32px;
+
+  h2 {
+    font-size: 32px;
   }
-  
-  h3{
+
+  h3 {
     font-size: 24px;
   }
-  h4{
+  h4 {
     font-size: 16px;
   }
-  
-  h1,h2,h3,h4,h5,h6{
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     clear: both;
-    margin-bottom:.5em;
+    margin-bottom: 0.5em;
     font-weight: bold;
     border-left: 4px solid var(--highlight);
-    margin-left: -.5em;
-    padding-left: calc(.5em - 4px);
+    margin-left: -0.5em;
+    padding-left: calc(0.5em - 4px);
   }
 }
