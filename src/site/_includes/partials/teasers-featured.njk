@@ -1,12 +1,12 @@
 <section>
   <ul class="index__main-teasers">
     <li class="index__teaser-wide">
-      {{ teaser(collections.posts.slice(-1)[0], size='large', author=true, text=true ) }}
+      {{ teaser(collections.posts.slice(-1)[0], size='large', author=true, text=true, meta=false ) }}
     </li>
   
   {% for post in collections.posts.slice(0, collections.posts.length-1)|reverse %}
       <li class="index__teaser-half">
-        {{ teaser(post, size='medium') }}
+        {{ teaser(post, size='medium', meta=false) }}
       </li>
   {% endfor %}
   </ul>
