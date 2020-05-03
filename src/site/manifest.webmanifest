@@ -2,7 +2,7 @@
   "name": "Skylines Times",
   "short_name": "Skylines Times",
   "start_url": ".",
-  "display": "standalone",
+  "display": "minimal-ui",
   "background_color": "#ffffff",
   "theme_color": "#2d91c2",
   "description": "All the news about Cities Skylines and the city building community.",
