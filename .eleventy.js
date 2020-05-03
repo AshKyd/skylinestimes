@@ -13,7 +13,15 @@ module.exports = function(eleventyConfig) {
     </time>`
   );
   eleventyConfig.addWatchTarget("./theme/**/*.{js,scss}");
-  eleventyConfig.setTemplateFormats(["njk", "md", "css", "jpg", "png", "webp"]);
+  eleventyConfig.setTemplateFormats([
+    "njk",
+    "md",
+    "css",
+    "jpg",
+    "png",
+    "webp",
+    "webmanifest"
+  ]);
 
   return {
     dir: {

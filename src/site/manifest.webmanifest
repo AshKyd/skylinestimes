@@ -1,0 +1,13 @@
+{
+  "name": "Skylines Times",
+  "short_name": "Skylines Times",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1e528e",
+  "description": "All the news about Cities Skylines and the city building community.",
+  "icons": [{
+    "src": "/media/assets/icon.png",
+    "sizes": "1024x1024",
+    "type": "image/png"
+  }]
+}
