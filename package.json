@@ -20,6 +20,7 @@
     "parcel": "^1.12.4"
   },
   "dependencies": {
-    "domready": "^1.0.8"
+    "domready": "^1.0.8",
+    "webp-hero": "0.0.0-dev.24"
   }
 }
