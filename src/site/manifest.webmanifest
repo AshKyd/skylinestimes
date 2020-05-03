@@ -4,10 +4,13 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#1e528e",
+  "theme_color": "#ffffff",
   "description": "All the news about Cities Skylines and the city building community.",
-  "icons": [{
-    "src": "/media/assets/icon.png",
-    "sizes": "1024x1024",
-    "type": "image/png"
-  }]
+  "icons": [
+    {
+      "src": "/media/assets/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
 }

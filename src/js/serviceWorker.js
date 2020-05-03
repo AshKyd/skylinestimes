@@ -5,8 +5,6 @@ self.addEventListener("install", function(evt) {
   console.log("The service worker is being installed.");
   // Ask the service worker to keep installing until the returning promise resolves.
   evt.waitUntil(precache());
-
-  console.log("new version yay");
 });
 
 // On fetch, use cache but update the entry with the latest contents from the server.
@@ -20,7 +18,6 @@ self.addEventListener("fetch", function({ request }) {
   }
 
   if (request.url.match(/\/$/)) {
-    console.log("trying to load page");
     return getAndFallbackToCache(request);
   }
 
@@ -30,7 +27,6 @@ self.addEventListener("fetch", function({ request }) {
 function getAndCache(request) {
   return caches.open(CACHE).then(cache => {
     return fetch(request).then(response => {
-      console.log("response", response);
       // Put a copy of the response in the runtime cache.
       return cache.put(request, response.clone()).then(() => {
         return response;
