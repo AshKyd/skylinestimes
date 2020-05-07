@@ -19,7 +19,7 @@ Last month Justin Bieber's old house went viral for its architectural audacity.
 
 Some compared it to a community college, others compared it to a CD spindle, but discerning mayors noticed it [looks kinda like a Simcity 4 asset when it's scaled just right](https://twitter.com/pooldad/status/1247183143968411650).
 
-Enterprising twitter mayor [@nuns_on_film](https://twitter.com/nuns_on_film) plugged it into a Simcity mock-up and got 61k likes, proving it would make a great asset.
+Enterprising twitter mayor [@igorbnunes](https://twitter.com/igorbnunes) plugged it into a Simcity mock-up and got 61k likes, proving it would make a great asset.
 
 <figure class="aligncenter"><blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">We do need this as a plugin for SimCity 4 <a href="https://t.co/X0FGt0ewcf">pic.twitter.com/X0FGt0ewcf</a></p>&mdash; Igor Nunes (@igorbnunes) <a href="https://twitter.com/igorbnunes/status/1247262498186842115?ref_src=twsrc%5Etfw">April 6, 2020</a></blockquote></figure>
 
