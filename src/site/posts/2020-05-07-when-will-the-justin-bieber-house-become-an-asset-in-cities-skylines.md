@@ -6,7 +6,7 @@ description: The Bieb's old mansion looks like an asset out of an RTS. Why isn't
   it available for Cities Skylines?
 teaserTitle: When will the Bieber house be an asset in Cities Skylines?
 date: 2020-05-07T17:06:20.665Z
-image: /media/justin-bieber-house.jpg
+image: /media/loma-linda-1.webp
 imageAlt: Justin Bieber's old house looks like an old RTS asset when pixelated
 author: ashkyd
 tags:
@@ -15,9 +15,9 @@ tags:
 breakoutContent:
   code: " "
 ---
-Last month Justin Bieber's old house went viral for its architectural audacity. 
-
 <figure class="alignright"><blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">We do need this as a plugin for SimCity 4 <a href="https://t.co/X0FGt0ewcf">pic.twitter.com/X0FGt0ewcf</a></p>&mdash; Igor Nunes (@igorbnunes) <a href="https://twitter.com/igorbnunes/status/1247262498186842115?ref_src=twsrc%5Etfw">April 6, 2020</a></blockquote></figure>
+
+Last month Justin Bieber's old house went viral for its architectural audacity. 
 
 Some compared it to a community college, others compared it to a CD spindle, but discerning mayors noticed it [looks kinda like a Simcity 4 asset when it's scaled just right](https://twitter.com/pooldad/status/1247183143968411650).
 
