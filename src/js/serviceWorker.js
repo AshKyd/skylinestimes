@@ -2,13 +2,13 @@ var CACHE = "cache-and-update";
 
 // On install, cache some resources.
 self.addEventListener("install", function(evt) {
-  console.log("The service worker is being installed.");
   // Ask the service worker to keep installing until the returning promise resolves.
   evt.waitUntil(precache());
 });
 
 // On fetch, use cache but update the entry with the latest contents from the server.
-self.addEventListener("fetch", function({ request }) {
+self.addEventListener("fetch", function(event) {
+  const { request } = event;
   if (
     request.method !== "GET" ||
     !request.url.startsWith(self.location.origin) ||
@@ -18,16 +18,16 @@ self.addEventListener("fetch", function({ request }) {
   }
 
   if (request.url.match(/\/$/)) {
-    return getAndFallbackToCache(request);
+    return event.respondWith(getAndFallbackToCache(request));
   }
 
-  return cacheFirst();
+  return event.respondWith(cacheFirst(request));
 });
 
 function getAndCache(request) {
-  return caches.open(CACHE).then(cache => {
-    return fetch(request).then(response => {
-      // Put a copy of the response in the runtime cache.
+  return fetch(request).then(response => {
+    // Put a copy of the response in the runtime cache.
+    return caches.open(CACHE).then(cache => {
       return cache.put(request, response.clone()).then(() => {
         return response;
       });
@@ -35,12 +35,14 @@ function getAndCache(request) {
   });
 }
 
-function cacheFirst() {
-  caches.match(request).then(cachedResponse => {
+function cacheFirst(request) {
+  return caches.match(request).then(cachedResponse => {
     // if we have a cached asset
     if (cachedResponse) {
       // run this in the background to refresh the cache
-      getAndCache(request);
+      getAndCache(request).catch(e =>
+        console.error("could not load", request.url, e.message)
+      );
 
       // return the request straight away.
       return cachedResponse;
