@@ -12,6 +12,10 @@ module.exports = function(eleventyConfig) {
       <span class="time">${moment(date).format("hh:mm:ss a")}</span>
     </time>`
   );
+
+  eleventyConfig.addNunjucksFilter("limit", function(arr, limit) {
+    return arr.slice(0, limit);
+  });
   eleventyConfig.addWatchTarget("./theme/**/*.{js,scss}");
   eleventyConfig.setTemplateFormats([
     "njk",
