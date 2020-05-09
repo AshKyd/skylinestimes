@@ -2,7 +2,7 @@
 <section class="sidebar">
   <h2 class="visuallyhidden">Just In</h2>
   <ul class="teaserlist teaserlist--vertical">
-  {% for post in collections.posts.slice(0, 5) %}
+  {% for post in collections.posts.reverse().slice(0, 5) %}
       <li class="teaserlist__item">
         {{ teaser(post, size="small", meta=false, text=false) }}
       </li>
