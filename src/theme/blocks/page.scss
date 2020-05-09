@@ -29,6 +29,9 @@
     height: 100%;
     object-fit: cover;
   }
+  &__sidebar {
+    min-width: 208px;
+  }
   @media (min-width: 800px) {
     &__columns {
       display: flex;
