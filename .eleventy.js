@@ -20,7 +20,8 @@ module.exports = function(eleventyConfig) {
     "jpg",
     "png",
     "webp",
-    "webmanifest"
+    "webmanifest",
+    "ico"
   ]);
 
   return {
