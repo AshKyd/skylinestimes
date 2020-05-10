@@ -82,7 +82,7 @@
 
 {% from "partials/teaser.njk" import teaser with context %}
 
-<div class="parallax-base">
+<main class="parallax-base">
   <div class="parallax-group parallax-group__1">
     <picture class="parallax-group__layer">
       <source srcset="/media/assets/hero-bg@mobile.webp" media="(max-width: 480px)">
@@ -95,9 +95,9 @@
     </picture>
   </div>
   <div class="parallax-group parallax-group__2">
-    <div class="parallax-group__layer" aria-label="Skylines Times">
+    <h1 class="parallax-group__layer" aria-label="Skylines Times">
       {% include "partials/logo.njk" %}
-    </div>
+    </h1>
   </div>
   <div class="parallax-group parallax-group__3">
     <picture class="parallax-group__layer">
@@ -116,5 +116,5 @@
       {% include "partials/teasers-featured.njk" %}
     </div>
   </div>
-</div>
+</main>
 {% include "partials/footer.njk" %}

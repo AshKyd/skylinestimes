@@ -8,5 +8,6 @@ module.exports = {
     email: "ash@kyd.com.au"
   },
   twitter: "skylinestimes",
-  googleAnalytics: "UA-2547771-26"
+  googleAnalytics: "UA-2547771-26",
+  supportEmail: "skylinestimes@kyd.com.au"
 };

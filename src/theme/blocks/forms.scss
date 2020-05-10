@@ -18,14 +18,17 @@
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  text-decoration: none;
   opacity: 0.8;
   transition: all 0.2s;
   &:hover,
   &:focus {
+    color: var(--highlightFg);
     opacity: 1;
     transform: scale(1.05);
   }
   &:active {
+    color: var(--highlightFg);
     transform: none;
   }
 }
