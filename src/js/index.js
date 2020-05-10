@@ -21,7 +21,14 @@ domReady(() => {
   }
 });
 
-require("./embedExternalLinks");
-
 // Load the webp polyfill if necessary
 require("./webp/index");
+
+function acceptCookies() {
+  require("./embedExternalLinks");
+  require("./disqus");
+}
+
+domReady(() => {
+  acceptCookies();
+});

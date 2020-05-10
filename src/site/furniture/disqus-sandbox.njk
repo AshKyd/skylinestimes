@@ -1,0 +1,71 @@
+---
+permalink: /disqus-sandbox/
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Disqus Sandbox</title>
+    <style type-"text/css">
+      *{margin:0;padding:0;}
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+    const data = JSON.parse(window.location.hash.slice(1) || {});
+    this.page.url = "{{site.permalink}}"+data.url; 
+    this.page.identifier = data.id || data.url;
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://skylines-times.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <script>
+      /**
+      * AMP iframe resizer
+      * Emit an amp `embed-size` message to the parent window
+      * @see https://ampbyexample.com/components/amp-iframe/#resizable-iframes
+      */
+      var lastHeight = -1;
+
+      function pxToNumber(measurement) {
+      return Number(measurement.replace("px", ""));
+      }
+      function emitResize() {
+      var computedStyle = getComputedStyle(document.body);
+      var newHeight =
+        pxToNumber(computedStyle.height) +
+        pxToNumber(computedStyle.marginTop) +
+        pxToNumber(computedStyle.marginBottom);
+
+      if (newHeight === lastHeight) return;
+      var payload = {
+        sentinel: "amp",
+        type: "embed-size",
+        height: newHeight
+      };
+      window.parent.postMessage(payload, "*");
+      lastHeight = newHeight;
+      }
+
+      var observer = new MutationObserver(emitResize);
+      observer.observe(document.body, {
+        attributes: true,
+        childList: true,
+        subtree: true,
+        attributeFilter: ["style", "class"]
+      });
+      addEventListener("resize", emitResize);
+      setInterval(emitResize, 5000);
+    </script>
+  </body>
+</html>
+                            
