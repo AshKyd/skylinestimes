@@ -10,7 +10,7 @@ image: /media/twitch-roulette.png
 imageAlt: The Twitch Roulette homepage
 author: ashkyd
 tags:
-  - post
+  - posts
   - community
 breakoutContent:
   code: " "
