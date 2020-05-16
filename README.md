@@ -17,10 +17,12 @@ If you want to be a regular contributor I can give you access to the admin panel
 ## Developing
 
 *Prerequisites:*
+
 1. install [nodejs](https://nodejs.org/en/)
 2. check out this repo
 
 *To start a development environment:*
+
 3. from the command line, run `npm install`
 4. In two separate command windows run:
   * `npm run start-server`
