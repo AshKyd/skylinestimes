@@ -29,9 +29,11 @@ But what could it mean? A [follow-up tweet from Paradox Interactive](https://twi
 
 Could this mysterious message from the future be referring to [Cities Skylines asset architect 752811818](https://steamcommunity.com/profiles/76561198278524798/myworkshopfiles/?appid=255710)? And if so, why?
 
-[Mayor Cazgem](https://twitch.tv/cazgem) posted a video discussing the plausibility of an upcoming <em>futuristic building content pack</em>, which makes a lot of sense.
+[Mayor Cazgem](https://twitch.tv/cazgem) posted a video discussing the plausibility of an upcoming <em>futuristic building content pack</em>, which makes a lot of sense. But Mayor Nightmorphis put a pin in that with the observation:
 
-But right now all we have are rumours, so for more clarification we must wait for the future to come to us.
+> It doesn't seem there's a content pack for now, at least looking at steamdb. all C:S "unknown app" are all 2 years old and a DLC has to be submitted months before because yeah...
+
+So right now all we have are mysteries. For more clarity we must wait for the future to come to us.
 
 You can check out Cazgem's video below:
 
