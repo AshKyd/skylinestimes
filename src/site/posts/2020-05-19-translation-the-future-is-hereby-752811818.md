@@ -6,7 +6,7 @@ description: What is 752811818? Cities Skylines drops a cryptic teaser for a new
   content pack?
 teaserTitle: Cities Skylines drops a cryptic teaser
 date: 2020-05-19T13:48:40.545Z
-image: /media/the-future-is-here.jpg
+image: /media/child-health-center.jpg
 imageAlt: A futuristic skyscraper towers over a modern city
 author: ashkyd
 tags:
