@@ -31,3 +31,5 @@ That was until Salvador's article got mainstream attention. The story reached a 
 The game is now safely preserved at [the Internet Archive where you can play it online](https://archive.org/details/simrefinery) in your browser. Keep in mind it's a business tool rather than a game, so while it was built on the same game engine it's definitely not as accessible as the original SimCity.
 
 So why not give it a play this weekend, or at least read the [original essay that uncovered this archaeological treasure](https://obscuritory.com/sim/when-simcity-got-serious/). Let us know if you manage to blow up your refinery.
+
+<a href="https://www.youtube.com/watch?v=EJ44x3z1iUw" class="embed">View some sample gameplay on Youtube</a>
