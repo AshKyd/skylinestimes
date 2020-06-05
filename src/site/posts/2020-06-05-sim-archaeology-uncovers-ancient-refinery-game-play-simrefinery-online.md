@@ -12,6 +12,7 @@ author: ashkyd
 tags:
   - simcity
   - maxis
+  - posts
 breakoutContent:
   code: " "
 ---
