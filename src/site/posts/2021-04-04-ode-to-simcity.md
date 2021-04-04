@@ -3,7 +3,7 @@ layout: page
 title: The joys of creation and destruction in SimCity 2000
 lede: Destroy something beautiful.
 description: And there was just something so mesmerising about peering down at the little world I was building, seeing the cars on the roads I built obeying the little traffic lights
-teaserTitle: Sim archaeology uncovers ancient refinery game
+teaserTitle: The joys of creation and destruction in SimCity 2000
 date: 2021-04-04T14:01:00.000Z
 image: /media/simcity-2000-monster.png
 imageAlt: The iconic black Simcity 2000 spider alien destroys a city
