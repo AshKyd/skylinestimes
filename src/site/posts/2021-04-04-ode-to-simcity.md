@@ -15,8 +15,6 @@ tags:
 breakoutContent:
   code: " "
 ---
-<img class="alignright" src="/media/simcity-2000-monster.png" alt="The iconic black Simcity 2000 spider alien destroys a city" />
-
 Christopher Livingston writes an ode to Simcity 2000 and city builders over on PC Gamer.
 
 > There was just something so mesmerising about peering down at the little world I was building, seeing the cars on the roads I built obeying the little traffic lights, experimenting with city ordinances, watching the city slowly grow until it was so incredibly big I'd just about run out of room. And then I'd start a new one.
