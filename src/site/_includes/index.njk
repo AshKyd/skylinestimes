@@ -1,0 +1,13 @@
+{% include "partials/head.njk" %}
+{% include "partials/header.njk" %}
+{% from "partials/teaser.njk" import teaser with context %}
+
+<main class="index__wrap">
+  <div class="index__content">
+      {{ content | safe }}
+      {% include "partials/teasers-featured.njk" %}
+  </div>
+</main>
+
+    
+{% include "partials/footer.njk" %}

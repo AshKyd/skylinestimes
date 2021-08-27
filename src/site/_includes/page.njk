@@ -1,0 +1,36 @@
+{% include "partials/head.njk" %}
+{% include "partials/header.njk" %}
+<main>
+  <article>
+    <div class="page__wrapper">
+      <div class="page__header">
+        <h1 class="page__heading">{{title}}</h1>
+        {% if lede %}<p class="page__lede">{{lede}}</p>{% endif %}
+        <div class="page__header-share">{% include "partials/share.njk" %}</div>
+      </div>
+      <div class="page__columns">
+        <div class="page__content formatted-content">
+          {% if(image) %}
+          <div class="page__image ratio ratio--16x9">
+            <picture>
+                <source srcset="{{image}}" media="(min-resolution: 2dppx) and (min-width:800px)">
+                <img class="page__image-element" src="{{image}}?nf_resize=fit&amp;w=640" alt="{{imageAlt}}" />
+            </picture>
+            
+          </div>
+        {% endif %}
+            {{ content | safe }}
+        </div>
+        <aside class="page__sidebar">
+          {% include "partials/sidebar.njk" %}
+        </aside>
+      </div>
+    </div>
+    {% if breakoutContent %}
+    <div class="page__breakout formatted-content">
+      {{ breakoutContent.code | safe }}
+    </div>
+    {% endif %}
+  </article>
+</main>
+{% include "partials/footer.njk" %}

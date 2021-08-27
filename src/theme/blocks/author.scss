@@ -1,0 +1,14 @@
+.author{
+  display: flex;
+  align-items: center;
+  &__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1.5px solid var(--grayLight);
+    margin-right: 0.5em;
+  }
+  &__name{
+    flex:1;
+  }
+}

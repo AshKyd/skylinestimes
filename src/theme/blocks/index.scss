@@ -1,0 +1,23 @@
+.index {
+  &__content{
+    padding:1em;
+  }
+  &__main-teasers{
+    max-width: var(--siteWidth);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  &__teaser-wide{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  &__teaser-half{
+    width: calc(50% - 10px);
+    margin-bottom: 40px;
+  }
+}

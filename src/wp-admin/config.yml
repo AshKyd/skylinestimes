@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "/src/site/media/"
+public_folder: "/media/"
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "src/site/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "select",
+          options: ["page"],
+          default: "page",
+        }
+      - { label: "Title (article)", name: "title", widget: "string" }
+      - { label: "Lede (article)", name: "lede", widget: "string" }
+      - {
+          label: "Description (teaser/SEO)",
+          name: "description",
+          widget: "string",
+        }
+      - {
+          label: "Teaser title (teaser)",
+          name: "teaserTitle",
+          widget: "string",
+        }
+      - { label: "Publish date", name: "date", widget: "datetime" }
+      - { label: "Featured image", name: "image", widget: "image" }
+      - { label: "Featured image alt text", name: "imageAlt", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+      - { label: "Breakout content", name: "breakoutContent", widget: "code", required: false }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - { label: Image, name: image, widget: image, required:true }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Credit", name: "attribution", widget: "string" }
+          - { label: "Credit link", name: "attribution", widget: "string" }

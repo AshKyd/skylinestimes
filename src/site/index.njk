@@ -1,0 +1,120 @@
+{% include "partials/head.njk" %}
+<style type="text/css">
+  .parallax-base{
+    background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 350px,#1e528e 500px,white 500px);
+    background-attachment: fixed;
+    height: calc(100vh);
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 2px;
+    perspective-origin: 50% calc(100vw * 0.235);
+  }
+  .parallax-group {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+   }
+  .parallax-group__layer{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    transform-origin: center;
+  }
+  
+  .parallax-group__layer img{
+    width: 100%;
+  }
+  .parallax-group__1{
+    z-index:1;
+  }
+  .parallax-group__1 .parallax-group__layer{
+    transform: translateZ(-3px) scale(2.5);
+  }
+  .parallax-group__2{
+    z-index:2;
+  }
+  .parallax-group__2 .parallax-group__layer{
+    transform: translateZ(-2px) scale(2);
+    text-align: center;
+    padding:1em;
+  }
+  .parallax-group__2 svg{
+    max-width: var(--siteWidth);
+  }
+  .parallax-group__2 path{
+    fill:white;
+  }
+  .parallax-group__3{
+    z-index:3;
+  }
+  .parallax-group__3 .parallax-group__layer{
+    transform: translateZ(-1px) scale(1.5);
+  }
+  .parallax-group__content{
+    background: white;
+    z-index: 3;
+    border-top:20px solid var(--grayLight);
+    height: auto;
+    margin-top: calc(100vw * 0.47);
+  }
+  .index__content{
+    position: relative;
+    margin-top: -100px;
+  }
+  
+  @media (max-width: 480px){
+    .parallax-base{
+      perspective-origin: 50% calc(100vw * 0.588);
+    }
+
+    .parallax-group__content{
+      margin-top:calc(100vw * 1.176);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .parallax-base * {
+      transform: none !important;
+    }
+  } 
+</style>
+
+{% from "partials/teaser.njk" import teaser with context %}
+
+<main class="parallax-base">
+  <div class="parallax-group parallax-group__1">
+    <picture class="parallax-group__layer">
+      <source srcset="/media/assets/hero-bg@mobile.webp" media="(max-width: 480px)">
+      <source srcset="/media/assets/hero-bg@4k.webp" media="(min-width: 1920px)">
+      <img 
+        aria-hidden="true"
+        alt=""
+        src="/media/assets/hero-bg@1080.webp" 
+        >
+    </picture>
+  </div>
+  <div class="parallax-group parallax-group__2">
+    <h1 class="parallax-group__layer" aria-label="Skylines Times">
+      {% include "partials/logo.njk" %}
+    </h1>
+  </div>
+  <div class="parallax-group parallax-group__3">
+    <picture class="parallax-group__layer">
+      <source srcset="/media/assets/hero-fg@mobile.webp" media="(max-width: 480px)">
+      <source srcset="/media/assets/hero-fg@4k.webp" media="(min-width: 1920px)">
+      <img
+      aria-hidden="true"
+      alt=""
+      src="/media/assets/hero-fg@1080.webp" 
+      >
+    </picture>
+  </div>
+  <div class="parallax-group parallax-group__content">
+    <div class="index__content">
+      {{ content | safe }}
+      {% include "partials/teasers-featured.njk" %}
+    </div>
+  </div>
+</main>
+{% include "partials/footer.njk" %}

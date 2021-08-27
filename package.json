@@ -1,0 +1,26 @@
+{
+  "name": "skylinestimes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy && parcel build src/js/index.js -d _site/ && cp -r src/wp-admin _site/",
+    "start": "npm run build && eleventy",
+    "start-server": "eleventy --serve",
+    "start-assets": "parcel -d _site/ src/js/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "moment": "^2.24.0",
+    "parcel": "^1.12.4",
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "domready": "^1.0.8",
+    "webp-hero": "0.0.0-dev.24"
+  }
+}

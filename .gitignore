@@ -1,0 +1,8 @@
+node_modules
+dist
+.cache
+_site
+src/site/media/assets-src
+.DS_Store
+# Local Netlify folder
+.netlify

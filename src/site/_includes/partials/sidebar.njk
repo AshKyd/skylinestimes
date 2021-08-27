@@ -1,0 +1,12 @@
+{% from "partials/teaser.njk" import teaser with context %}
+<section class="sidebar">
+  <h2 class="h2">Just In</h2>
+  <ul class="teaserlist teaserlist--vertical">
+  {% for post in collections.posts | reverse | limit(5) %}
+      <li class="teaserlist__item">
+        {{ teaser(post, size="small", meta=false, text=false) }}
+      </li>
+  {% endfor %}
+  </ul>
+  {% include "widgets/email.njk" %}
+</section>

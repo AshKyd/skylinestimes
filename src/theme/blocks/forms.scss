@@ -1,0 +1,43 @@
+.form,
+.button,
+.input {
+  border-radius: 2px;
+  padding: 0.75em 1.5em;
+  border: 1px solid var(--grayLight);
+}
+.input {
+  width: 100%;
+}
+.form {
+  padding: 0.75em;
+}
+
+.button {
+  background: var(--linkLightBackground);
+  color: var(--highlightFg);
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.2s;
+  &:hover,
+  &:focus {
+    color: var(--highlightFg);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  &:active {
+    color: var(--highlightFg);
+    transform: none;
+  }
+}
+
+@keyframes button {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
