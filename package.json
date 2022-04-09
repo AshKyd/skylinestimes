@@ -15,7 +15,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "parcel": "^1.12.4",
     "sass": "^1.26.5"
   },
