@@ -16,7 +16,7 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "moment": "^2.24.0",
-    "parcel": "^1.12.4",
+    "parcel": "^2.8.2",
     "sass": "^1.26.5"
   },
   "dependencies": {
